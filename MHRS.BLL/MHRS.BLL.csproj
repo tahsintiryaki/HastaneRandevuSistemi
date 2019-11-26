@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAF58669-804F-41CD-995D-662D6F9A3F80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MHRS.BLL</RootNamespace>
+    <AssemblyName>MHRS.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BolumlerBLL.cs" />
+    <Compile Include="DoktorBilgileriBLL.cs" />
+    <Compile Include="EzcaneBilgileriBLL.cs" />
+    <Compile Include="HastaBilgileriBLL.cs" />
+    <Compile Include="HastanelerBLL.cs" />
+    <Compile Include="HataMesajlari.cs" />
+    <Compile Include="IlcelerBLL.cs" />
+    <Compile Include="IllerBLL.cs" />
+    <Compile Include="MuayeneBilgileriBLL.cs" />
+    <Compile Include="PoliklinklerBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuGoruntulemeBLL.cs" />
+    <Compile Include="RecetelerBLL.cs" />
+    <Compile Include="RollerBLL.cs" />
+    <Compile Include="SaatlerBLL.cs" />
+    <Compile Include="SeanslarBLL.cs" />
+    <Compile Include="TeshislerBLL.cs" />
+    <Compile Include="UyeGirisBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MHRS.DAL\MHRS.DAL.csproj">
+      <Project>{ba15dbd2-eaca-4b80-98d9-bf77e5e87d77}</Project>
+      <Name>MHRS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MHRS.Entities\MHRS.Entities.csproj">
+      <Project>{d4758e9d-db85-43af-9824-b6113a0dd653}</Project>
+      <Name>MHRS.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

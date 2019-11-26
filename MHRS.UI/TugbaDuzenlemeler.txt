@@ -1,0 +1,42 @@
+﻿GirisEkrani;
+	->label2,3,4,5 eklendi (Açıklama ve *)
+GirisEkranı cs;
+	txtUsername_Click eklendi,
+GirisEkrani.designer.cs; 
+   this.txtPassword.MaxLength = 16; eklendi.
+
+////////////////////////////////////////////////////////////
+UyeOl;
+Tamamen değiştirelim.
+tooltTip eklendi, *'lara renk verildi acıklama satırı yazıldı, lblSifreyiGöster eklendi, 
+btnsignUpClik'e dialogResult yazıldı.
+
+////////////////////////////////////////////////////////////
+RandevuAlma;
+Randevularımı Göster butonu eklendi;
+btnRandevularim_Click ile içinde olaylar var.
+RandevuAlma_Load Yeni eklenen kodlar var,
+btnCancel clik eventine this.Close(); yazıldı ek olarak.
+
+////////////////////////////////////////////////////////////
+DoktorPaneli eklendi, listedeki randevuya çift tıklayınca randevu oluştur ve recete olustur geliyor,
+Tek tıklamada eski boyuta dönüyor,
+Listview'e veritabanından muayenebilgileri geliyor,
+Teşhis güncellenebiliyor,
+Recete oluşturulabiliyor.
+
+MuayenebilgileriDAL'a Teshis guncelle yazıldı
+MuayeneBilgileriBLL, Teshis güncelle metodu yazıldı,
+
+////////////////////////////////////////////////////////////
+EczanePaneli eklendi, BLL'leri baglandı, tam calısıyor.
+
+////////////////////////////////////////////////////////////
+HastaID getirmek için;
+GirisEkranı, globalde public int HastaId eklendi,
+GirisEkranı, LoginKontrol Hasta ise kısmına kodlar eklendi,
+RandevuAlma, HastaIDGetir metodu eklendi,
+HastaBilgileriDAL, HastaIDGetir metodu eklendi,
+HastaBilgileriBLL, HastaIdGetir metodu eklendi,
+
+
