@@ -35,7 +35,7 @@ namespace MHRS.BLL
         {
             get
             {
-                return "Dogru bir Mail Adresi giriniz!";
+                return "Lütfen Dogru bir Mail Adresi giriniz!";
             }
         }
     }
